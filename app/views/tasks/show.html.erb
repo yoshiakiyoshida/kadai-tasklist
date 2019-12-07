@@ -1,2 +1,7 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1>id: <%= @task.id %> のタスク詳細ページ</h1>
+
+<p><%= @task.content %></p>
+
+<%= link_to '一覧に戻る', tasks_path %>
+<%= link_to 'このメッセージを編集する', edit_task_path(@task) %>
+<%= link_to 'このメッセージを削除する', @message, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
