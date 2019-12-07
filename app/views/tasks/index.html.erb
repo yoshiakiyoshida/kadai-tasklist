@@ -4,11 +4,13 @@
     <tr>
         <th>id</th>
         <th>メッセージ</th>
+        <th>ステータス</th>
     </tr>
     <% @tasks.each do |task| %>    
         <tr>
             <td><%= link_to task.id, task %> : </td>
             <td><%= task.content %></td>
+            <td><%= task.status %></td>
         </tr>
     <% end %>
 </table>
