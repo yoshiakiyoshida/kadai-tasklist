@@ -3,9 +3,6 @@ class TasksController < ApplicationController
 
   def index
       @tasks = Task.where(user: current_user)
-      puts '-----'
-      puts @tasks.first.user.email
-      puts '-----'
   end
 
   def show
