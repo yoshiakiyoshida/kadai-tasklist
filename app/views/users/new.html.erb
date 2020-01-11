@@ -6,7 +6,6 @@
   <div class="col-sm-6 offset-sm-3">
 
     <%= form_with(model: @user, local: true) do |f| %>
-    <%= render 'layouts/error_messages', model: f.object %>
       
       <div class="form-group">
         <%= f.label :name, 'Name' %>
@@ -32,4 +31,3 @@
     <% end %>
   </div>
 </div>
-
